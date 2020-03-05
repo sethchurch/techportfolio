@@ -1,0 +1,13 @@
+extends ../mixins/layout.pug
+include ../mixins/_portfolioPage
+block content
+    -
+        var page = {
+            name: 'Example Page',
+            img: 'http://via.placeholder.com/550x250',
+            alt: 'Placeholder Image',
+            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatum beatae nulla autem deserunt nesciunt repudiandae reiciendis consequatur cupiditate obcaecati, cum enim modi dolore dicta minima? Officiis numquam minus porro.Maxime accusantium veritatis provident eveniet quisquam consequuntur reprehenderit at tenetur vero a? Voluptatibus veritatis recusandae doloremque sunt eveniet nemo fugit dolore modi facere quam? Quidem dignissimos quia illo? Quaerat, numquam.Atque illo a reiciendis nesciunt fugit dicta molestias quibusdam ducimus deserunt. Fugit aperiam nam id. Nulla laboriosam iure nesciunt facilis odit exercitationem incidunt rem alias perspiciatis! Minus suscipit neque esse.Laudantium, eum sequi sit voluptatem consequuntur ea expedita alias et! Neque, adipisci? Hic sit ut dolore molestiae saepe, blanditiis eligendi quos incidunt. Quas autem doloremque possimus dicta iure, incidunt blanditiis.'
+        }
+
+    +portfolioPage(page)
+

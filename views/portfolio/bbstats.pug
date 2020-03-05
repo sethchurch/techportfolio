@@ -1,0 +1,14 @@
+extends ../mixins/layout.pug
+include ../mixins/_portfolioPage
+block content
+    -
+        var page = {
+            name: 'BB Stats Page',
+            img: '../images/portfolio/bbstats.png',
+            alt: 'Placeholder Image',
+            link: '//bbstats2.surge.sh/#/',
+            desc: 'BB Stats page was made in Vue.JS using data fetched off an external api provided by the server itself. I made this becuase we needed a nicer way to allow players to view their records for each map. It also allows users to view thier own personal records and seasonal records for each map features which were lacking in the previous leaderboard which only allowed players to view the map they were currently on.'
+        }
+
+    +portfolioPage(page)
+

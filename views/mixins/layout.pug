@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon")
+        link(rel="icon" href="../images/favicon.ico" type="image/x-icon")
+        link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap', rel='stylesheet')
+        link(rel="stylesheet", href="../css/style.css")
+        title Gregory Church's Portfolio
+    body
+        .app
+            .side
+                nav.mobile-nav
+                    a(href="/").mobile-nav__item Portfolio
+                    a(href="/about.html").mobile-nav__item About
+                    a(href="/contact.html").mobile-nav__item Contact
+                    li.mobile-nav__item#navToggle
+                        i.fa.fa-chevron-up
+                        
+                header.header
+                    a(href="/")
+                        div.header__logo
+                            //- img(src="images/logo.svg", alt="")
+                            include ../imports/logo.html
+                    button.navBtn#navToggle
+                        i.fa.fa-bars
+                nav.nav
+                    ul.nav-list
+                        li.nav-list__item
+                            a(href="/") Portfolio
+                        li.nav-list__item
+                            a(href="/about.html") About
+                        li.nav-list__item
+                            a(href="/contact.html") Contact
+                footer.footer
+                    a(href="//github.com/iEnder")
+                        i.fa.fa-github
+                    a(href="//greg.design.blog/")
+                        i.fa.fa-wordpress
+                    a(href="//codepen.io/pkmn9060")
+                        i.fa.fa-codepen
+            section.content
+                block content
+        script(src="../js/script.js")

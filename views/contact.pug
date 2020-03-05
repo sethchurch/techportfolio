@@ -1,0 +1,12 @@
+extends mixins/layout
+
+block content
+    form.contact
+        label(for="name").contact__label Name
+        input(type="text" name="name").contact__input
+        label(for="email").contact__label Email
+        input(type="text" name="email").contact__input
+        label(for="body").contact__label Body
+        textarea(name="body", cols="30", rows="10").contact__input
+        button.contact__btn Submit
+    

@@ -1,0 +1,14 @@
+extends ../mixins/layout.pug
+include ../mixins/_portfolioPage
+block content
+    -
+        var page = {
+            name: 'Checkout Ui Demo',
+            img: '../images/portfolio/uidemo.png',
+            alt: 'Picture of a checkout dialog box featuring card information input',
+            link: '//codepen.io/pkmn9060/full/JbRXyz/',
+            desc: 'Daily Ui Codepen made in Javascript, Html, and CSS. This was to demonstrate use of css animations and javascript dom interactions at the time as well as certain design principals.'
+        }
+
+    +portfolioPage(page)
+

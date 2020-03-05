@@ -1,0 +1,13 @@
+extends ../mixins/layout.pug
+include ../mixins/_portfolioPage
+block content
+    -
+        var page = {
+            name: 'Arkmir Pixel Art',
+            img: '../images/portfolio/arkmirpixel.png',
+            alt: 'Picture of a red skinned tiefling clenching his fist',
+            desc: 'This is pixel art of a DnD character of mine named Arkmir the Tiefling Conquest Paladin.'
+        }
+
+    +portfolioPage(page)
+

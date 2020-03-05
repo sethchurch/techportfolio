@@ -1,0 +1,13 @@
+extends ../mixins/layout.pug
+include ../mixins/_portfolioPage
+block content
+    -
+        var page = {
+            name: 'Aelen of Feylune Pixel Art',
+            img: '../images/portfolio/aelen.png',
+            alt: 'Picture of a blue skinned Firbolg wearing tribal winter gear',
+            desc: 'Pixel art of Aelen of Feylune a Firbolg from the nomadic tribe / group known as the Feylune Sailors.'
+        }
+
+    +portfolioPage(page)
+

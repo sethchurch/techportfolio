@@ -1,0 +1,8 @@
+mixin portfolioPage(item)
+    content.portfolio-page
+        h1.portfolio-page__header #{item.name}
+        img(src=`${item.img}` alt=`${item.alt ? item.alt : ''}`).portfolio-page__img
+        if item.link
+            a(href=`${item.link}`).portfolio-page__link
+                button.portfolio-page__button Link to Demo
+        p.portfolio-page__text #{item.desc}

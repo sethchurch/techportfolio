@@ -1,0 +1,32 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 592.7 983" style="enable-background:new 0 0 592.7 983;" xml:space="preserve">
+    <style type="text/css">
+        .st0 {
+            fill: #2d91b5;
+        }
+
+        .st1 {
+            fill: #42A5F5;
+        }
+
+        .st2 {
+            fill: #1565C0;
+        }
+
+        .st3 {
+            fill: #0D47A1;
+        }
+    </style>
+    <g id="background">
+        <polygon id="XMLID_10_" class="st0" points="592.7,628.1 107.9,983 0,328.1 463.3,0"></polygon>
+    </g>
+    <g id="Logo">
+        <g id="XMLID_32_">
+        <polygon id="XMLID_44_" class="st1" points="132.4,356.4 132.4,294.1 404.4,107.1 404.4,173.5"></polygon>
+        <polygon id="XMLID_43_" class="st2" points="404.4,457.2 404.4,537.3 131.9,356.4 193.1,315.2"></polygon>
+        <polygon id="XMLID_42_" class="st3" points="132,356.5 224.1,335.9 193.3,315.3"></polygon>
+        <polygon id="XMLID_41_" class="st1" points="448.4,654.8 448.4,592.6 176.4,405.5 176.4,471.9"></polygon>
+        <polygon id="XMLID_36_" class="st2" points="176.4,755.6 176.4,835.7 448.9,654.8 387.6,613.7"></polygon>
+        <polygon id="XMLID_33_" class="st3" points="448.8,654.9 356.8,634.3 387.5,613.8"></polygon>
+        </g>
+    </g>
+</svg>

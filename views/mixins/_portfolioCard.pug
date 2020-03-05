@@ -1,0 +1,12 @@
+mixin portfolioCard(item)
+    a(href=`${item.link ? item.link : '#'}`).card.card--loading
+        .card__screen
+        img(src=`${item.img}`, alt=`${item.alt ? item.alt : ''}`).card__img
+        .card__content
+            p.card__text #{item.name}
+
+            if item.skills
+                .card__skills
+                    each skill in item.skills
+                        span.card__pill= skill
+
