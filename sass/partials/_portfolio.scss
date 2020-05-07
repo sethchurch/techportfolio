@@ -80,6 +80,9 @@
         font-family: inherit;
         font-weight: 600;
         background-color: #1f1f1f;
+        &--active {
+            background-color: #0E4264;
+        }
         &:hover {
             background-color: #121212;
         }
