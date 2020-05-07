@@ -36,6 +36,8 @@ body {
 
 .content {
   padding-right: 2rem; }
+  .content__text {
+    text-align: center; }
 
 .header {
   margin-bottom: 3rem; }
@@ -204,7 +206,7 @@ body {
     height: 100%;
     background: black;
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.2;
     -webkit-transition: opacity 0.5s cubic-bezier(0.6, 0.27, 0.27, 0.94);
     transition: opacity 0.5s cubic-bezier(0.6, 0.27, 0.27, 0.94); }
   .card__img {
@@ -231,7 +233,13 @@ body {
 
 @media (max-width: 900px) {
   .card {
-    height: 600px; } }
+    height: 600px;
+    width: 75%; } }
+
+@media (max-width: 600px) {
+  .card {
+    height: 600px;
+    width: 95%; } }
 
 .contact {
   display: -webkit-box;
@@ -241,7 +249,8 @@ body {
   flex-direction: column;
   margin: 0 auto;
   margin-top: 7rem;
-  width: 85%; }
+  width: 85%;
+  margin-bottom: 9rem; }
   .contact__label {
     font-size: 1.5rem;
     font-weight: 800;
@@ -263,7 +272,7 @@ body {
 @media (max-width: 900px) {
   .contact {
     margin-top: 0;
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem; }
     .contact__label {
       font-size: 1.1rem; }
     .contact__btn {
@@ -290,9 +299,17 @@ body {
     .footer i {
       font-size: 2rem; } }
 
-.portfolio__title {
-  text-align: center;
-  font-size: 3rem; }
+.portfolio {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column; }
+  .portfolio__title {
+    text-align: center;
+    font-size: 3rem; }
 
 .portfolio-item-container {
   display: grid;
@@ -345,6 +362,26 @@ body {
     margin: 0 auto;
     margin-bottom: 3rem; }
 
+.switch {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  margin: 0 auto;
+  border: 7px #353535 solid;
+  border-radius: 4px; }
+  .switch__button {
+    border: 0;
+    -webkit-box-flex: 3;
+    flex-grow: 3;
+    font-family: inherit;
+    font-weight: 600;
+    background-color: #1f1f1f;
+    color: #ededed;
+    padding: 0.5rem 1rem; }
+    .switch__button:hover {
+      background-color: #121212; }
+    .switch__button:nth-child(n+1) {
+      border-right: 3px #353535 solid; }
+
 @media (max-width: 1200px) {
   .portfolio-item-container {
     display: grid;
@@ -362,10 +399,18 @@ body {
     .portfolio-page__img {
       width: 100%; }
   .portfolio-item-container {
-    display: grid;
+    display: -webkit-box;
+    display: flex;
     padding-top: 2rem;
-    grid-template-columns: auto;
     padding: 0 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
     margin-bottom: 2rem; }
     .portfolio-item-container .card:nth-child(2n) {
       margin-bottom: 1rem; }
@@ -380,7 +425,8 @@ body {
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  margin: 0; }
+  margin: 0;
+  min-height: 100vh; }
   .about__header {
     margin-top: 5rem;
     text-align: center;
@@ -408,10 +454,6 @@ body {
     font-size: 1.25rem; }
 
 @media (max-width: 1200px) {
-  .about__resume {
-    height: 500px; } }
-
-@media (max-width: 900px) {
   .about__resume {
     display: none; }
   .about__resume-btn {

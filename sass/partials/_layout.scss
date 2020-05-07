@@ -35,6 +35,9 @@ body {
 
 .content {
     padding-right: 2rem;
+    &__text {
+        text-align: center;
+    }
 }
 
 .header {

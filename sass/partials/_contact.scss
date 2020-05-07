@@ -4,6 +4,7 @@
     margin: 0 auto;
     margin-top: 7rem;
     width: 85%;
+    margin-bottom: 9rem;
     &__label {
         font-size: 1.5rem;
         font-weight: 800;
@@ -30,7 +31,7 @@
 @media (max-width: 900px) {
     .contact {
         margin-top: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         &__label {
             font-size: 1.1rem;
         }

@@ -1,5 +1,5 @@
 mixin portfolioCard(item)
-    a(href=`${item.link ? item.link : '#'}`).card.card--loading
+    a(href=`${item.link ? item.link : '#'}` data-skills= `${item.skills}`).card.card--loading
         .card__screen
         img(src=`${item.img}`, alt=`${item.alt ? item.alt : ''}`).card__img
         .card__content

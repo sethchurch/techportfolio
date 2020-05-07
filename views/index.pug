@@ -4,29 +4,30 @@ include mixins/_portfolioCard
 
 
 block content
-    - 
-        var items = [
-            {img:"./images/portfolio/bbstats.png", name: "BB Stats Page", link:'./portfolio/bbstats.html', skills:['Vue.JS', 'Javascript', 'HTML', 'CSS', 'Node.JS']},
-            {img:"./images/portfolio/arkmirpixel.png", name: "Arkmir Pixel", link:'./portfolio/arkmirpixel.html', skills:['Photoshop']},
-            {img:"./images/portfolio/aelen.png", name: "Aelen of Feylune", link:'./portfolio/aelenpixel.html', skills:['Photoshop']},
-            {img:"./images/portfolio/uidemo.png", name: "Ui Demo", link:'./portfolio/uidemo.html', skills:['Javascript', 'HTML', 'CSS']},
-            {img:"./images/portfolio/bbbans.png", name: "BB Bans Page", link:'./portfolio/example.html', skills:['Javascript', 'HTML', 'CSS']},
-            {img:"./images/portfolio/portfoliopage.png", name: "Portfolio Page", link:'./portfolio/example.html', skills:['Javascript', 'HTML', 'CSS']},
-            {img:"./images/portfolio/diceroller.png", name: "Dice Roller", link:'./portfolio/example.html', skills:['Javascript', 'HTML', 'CSS']},
-            {img:"./images/portfolio/arkmirpainting.png", name: "Arkmir Painting", link:'./portfolio/example.html', skills:['Photoshop']},
-            {img:"./images/portfolio/mindflayer.jpg", name: "Mindflayer Sculpt", link:'./portfolio/example.html', skills:['ZBrush']},
-            {img:"./images/portfolio/elaristwins.png", name: "Elaris Twins", link:'./portfolio/example.html', skills:['Photoshop']},
-            {img:"./images/portfolio/malastorte.jpg", name: "Mala Sorte", link:'./portfolio/example.html', skills:['Photoshop']},
-            {img:"./images/portfolio/simongame.png", name: "Simon Game", link:'./portfolio/example.html', skills:['Javascript', 'HTML', 'CSS']},
-            {img:"./images/portfolio/placeholder.png", name: "Portfolio Item"},
-            {img:"./images/portfolio/placeholder.png", name: "Portfolio Item"},
-            {img:"./images/portfolio/placeholder.png", name: "Portfolio Item"},
-            {img:"./images/portfolio/placeholder.png", name: "Portfolio Item"},
-            ];
+    //- - 
+    //-     var items = [
+    //-         {img:"./images/portfolio/bbstats.png", name: "BB Stats Page", link:'./portfolio/bbstats.html', skills:['Vue.JS', 'Javascript', 'HTML', 'CSS', 'Node.JS']},
+    //-         {img:"./images/portfolio/arkmirpixel.png", name: "Arkmir Pixel", link:'./portfolio/arkmirpixel.html', skills:['Photoshop']},
+    //-         {img:"./images/portfolio/aelen.png", name: "Aelen of Feylune", link:'./portfolio/aelenpixel.html', skills:['Photoshop']},
+    //-         {img:"./images/portfolio/uidemo.png", name: "Ui Demo", link:'./portfolio/uidemo.html', skills:['Javascript', 'HTML', 'CSS']},
+    //-         {img:"./images/portfolio/bbbans.png", name: "BB Bans Page", link:'./portfolio/example.html', skills:['Javascript', 'HTML', 'CSS']},
+    //-         {img:"./images/portfolio/portfoliopage.png", name: "Portfolio Page", link:'./portfolio/example.html', skills:['Javascript', 'HTML', 'CSS']},
+    //-         {img:"./images/portfolio/diceroller.png", name: "Dice Roller", link:'./portfolio/example.html', skills:['Javascript', 'HTML', 'CSS']},
+    //-         {img:"./images/portfolio/arkmirpainting.png", name: "Arkmir Painting", link:'./portfolio/example.html', skills:['Photoshop']},
+    //-         {img:"./images/portfolio/mindflayer.jpg", name: "Mindflayer Sculpt", link:'./portfolio/example.html', skills:['ZBrush']},
+    //-         {img:"./images/portfolio/elaristwins.png", name: "Elaris Twins", link:'./portfolio/example.html', skills:['Photoshop']},
+    //-         {img:"./images/portfolio/malastorte.jpg", name: "Mala Sorte", link:'./portfolio/example.html', skills:['Photoshop']},
+    //-         {img:"./images/portfolio/simongame.png", name: "Simon Game", link:'./portfolio/example.html', skills:['Javascript', 'HTML', 'CSS']},
+    //-         ];
     
     .portfolio
         h1.portfolio__title My Work
+        .switch
+            button#devBtn.switch__button.switch__button--active Development
+            button#bothBtn.switch__button.switch__button--active All
+            button#designBtn.switch__button Design
+            
         .portfolio-item-container
-            each item in items
-                +portfolioCard(item)
+            //- each item in items
+            //-     +portfolioCard(item)
     

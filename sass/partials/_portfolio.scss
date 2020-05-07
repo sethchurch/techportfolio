@@ -1,4 +1,7 @@
 .portfolio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     &__title {
         text-align: center;
         font-size: 3rem;
@@ -64,6 +67,30 @@
     }
 }
 
+.switch {
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    // width: 12rem;
+    margin: 0 auto;
+    border: 7px #353535 solid;
+    border-radius: 4px;
+    &__button {
+        border: 0;
+        flex-grow: 3;
+        font-family: inherit;
+        font-weight: 600;
+        background-color: #1f1f1f;
+        &:hover {
+            background-color: #121212;
+        }
+        &:nth-child(n+1) {
+            border-right: 3px #353535 solid;
+        }
+        color: #ededed;
+        padding: 0.5rem 1rem;
+    }
+}
+
 @media (max-width: 1200px) {
     .portfolio-item-container {
         display: grid;
@@ -88,10 +115,13 @@
         }
     }
     .portfolio-item-container {
-        display: grid;
+        display: flex;
         padding-top: 2rem;
-        grid-template-columns: auto;
         padding: 0 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         & .card:nth-child(2n){
             margin-bottom: 1rem;
         }

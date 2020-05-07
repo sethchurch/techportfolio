@@ -46,7 +46,7 @@
         height: 100%;
         background: black;
         position: absolute;
-        opacity: 0.3;
+        opacity: 0.2;
         transition: opacity 0.5s cubic-bezier(.6,.27,.27,.94);
     }
     &__img {
@@ -77,5 +77,13 @@
 @media (max-width: 900px) {
     .card {
         height: 600px;
+        width: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        height: 600px;
+        width: 95%;
     }
 }
