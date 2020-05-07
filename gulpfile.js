@@ -53,3 +53,5 @@ gulp.task('watch-pug', () => {
 });
 
 gulp.task('default', gulp.parallel('watch-pug', 'watch-sass', 'browser-sync'));
+
+gulp.task('build', gulp.parallel('pug', 'sass'));
