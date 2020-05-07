@@ -102,21 +102,29 @@
     
 
     const portfolio = new Board(cards, document.querySelector('.portfolio-item-container'));
+    function setActive(file, target) {
+        document.querySelector('.' + file).classList.toggle(file);
+        target.classList.toggle(file);
+    };
     portfolio.filter('development');
+    
 
     const designBtn = document.querySelector('#designBtn');
     const bothBtn = document.querySelector('#bothBtn');
     const devBtn = document.querySelector('#devBtn');
-
+    
     designBtn.addEventListener('click', e => {
+        setActive('switch__button--active', designBtn);
         portfolio.filter('design');
     });
-
+    
     bothBtn.addEventListener('click', e => {
+        setActive('switch__button--active', bothBtn);
         portfolio.render();
     });
-
+    
     devBtn.addEventListener('click', e => {
+        setActive('switch__button--active', devBtn);
         portfolio.filter('development');
     });
 

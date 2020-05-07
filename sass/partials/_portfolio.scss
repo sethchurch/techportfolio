@@ -79,9 +79,10 @@
         flex-grow: 3;
         font-family: inherit;
         font-weight: 600;
+        outline: 0;
         background-color: #1f1f1f;
         &--active {
-            background-color: #0E4264;
+            background-color: rgb(11, 79, 124) !important;
         }
         &:hover {
             background-color: #121212;
@@ -97,6 +98,7 @@
 @media (max-width: 1200px) {
     .portfolio-item-container {
         display: grid;
+        margin-top: 2rem;
         padding-top: 2rem;
         grid-template-columns: auto auto;
         grid-column-gap: 1.5rem;

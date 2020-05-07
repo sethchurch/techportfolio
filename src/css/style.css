@@ -374,9 +374,12 @@ body {
     flex-grow: 3;
     font-family: inherit;
     font-weight: 600;
+    outline: 0;
     background-color: #1f1f1f;
     color: #ededed;
     padding: 0.5rem 1rem; }
+    .switch__button--active {
+      background-color: #0b4f7c !important; }
     .switch__button:hover {
       background-color: #121212; }
     .switch__button:nth-child(n+1) {
@@ -385,6 +388,7 @@ body {
 @media (max-width: 1200px) {
   .portfolio-item-container {
     display: grid;
+    margin-top: 2rem;
     padding-top: 2rem;
     grid-template-columns: auto auto;
     grid-column-gap: 1.5rem; }
